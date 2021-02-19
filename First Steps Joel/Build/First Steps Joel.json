@@ -1,0 +1,16 @@
+{
+"companyName": "UPV",
+"productName": "ADV_2021",
+"productVersion": "0.1",
+"dataUrl": "First Steps Joel.data.unityweb",
+"wasmCodeUrl": "First Steps Joel.wasm.code.unityweb",
+"wasmFrameworkUrl": "First Steps Joel.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.14f1"
+}
