@@ -1,0 +1,16 @@
+{
+"companyName": "UPV",
+"productName": "ADV_2021",
+"productVersion": "0.1",
+"dataUrl": "Cofre_Y_Estrella.data.unityweb",
+"wasmCodeUrl": "Cofre_Y_Estrella.wasm.code.unityweb",
+"wasmFrameworkUrl": "Cofre_Y_Estrella.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.14f1"
+}
