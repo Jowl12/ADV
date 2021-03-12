@@ -1,0 +1,17 @@
+{
+"companyName": "UPV",
+"productName": "ADV_2021",
+"productVersion": "1.0",
+"dataUrl": "Clase 4.data.unityweb",
+"asmCodeUrl": "Clase 4.asm.code.unityweb",
+"asmMemoryUrl": "Clase 4.asm.memory.unityweb",
+"asmFrameworkUrl": "Clase 4.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.14f1"
+}
