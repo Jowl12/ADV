@@ -5,6 +5,7 @@ using UnityEngine;
 public class el_Movimiento : MonoBehaviour
 {
     public float downAccel = 1f;
+    public float animConst = 0.02f;
     public Animator animator;
     public CharacterController charController;
 
@@ -20,23 +21,39 @@ public class el_Movimiento : MonoBehaviour
     {   
 
         charController.Move(Vector3.down * downAccel * Time.deltaTime);
-        animator.SetFloat("Vertical", 0);
-        animator.SetFloat("Horizontal", 0);
+        //animator.SetFloat("Vertical", 0);
+        //animator.SetFloat("Horizontal", 0);
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            animator.SetTrigger("Roll");
+        }
         if (Input.GetKey(KeyCode.I))
         {
-            animator.SetFloat("Vertical", 1);
+            if (animator.GetFloat("Vertical") < 1.0f) animator.SetFloat("Vertical", animator.GetFloat("Vertical") + animConst);
         }
-        else if (Input.GetKey(KeyCode.K)) 
+        else if (Input.GetKey(KeyCode.K))
         {
-            animator.SetFloat("Vertical", -1);
+            if (animator.GetFloat("Vertical") > -1.0f) animator.SetFloat("Vertical", animator.GetFloat("Vertical") - animConst);
         }
-        else if (Input.GetKey(KeyCode.L)) 
+        else
         {
-            animator.SetFloat("Horizontal", 1);
+            if (animator.GetFloat("Vertical") > 0) animator.SetFloat("Vertical", animator.GetFloat("Vertical") - animConst);
+            else if (animator.GetFloat("Vertical") < 1.0f) animator.SetFloat("Vertical", animator.GetFloat("Vertical") + animConst);
+        }
+        
+        //Horizontal
+        if (Input.GetKey(KeyCode.L)) 
+        {
+            if (animator.GetFloat("Horizontal") > -1.0f) animator.SetFloat("Horizontal", animator.GetFloat("Horizontal") - animConst);
         }
         else if(Input.GetKey(KeyCode.J))
         {
-            animator.SetFloat("Horizontal", -1);
+            if (animator.GetFloat("Horizontal") < 1.0f) animator.SetFloat("Horizontal", animator.GetFloat("Horizontal") + animConst);
         }
+        else
+        {
+            if (animator.GetFloat("Horizontal") > 0) animator.SetFloat("Horizontal", animator.GetFloat("Horizontal") - animConst);
+            else if (animator.GetFloat("Horizontal") < 1.0f) animator.SetFloat("Horizontal", animator.GetFloat("Horizontal") + animConst);
+        }
+
     }   
 }

@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Clase 8/Lesson 8.unity
     guid: 319ff8a3c8a73b74bb3de324439fb3c5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Clase 9/Lesson9.unity
     guid: 7e15e1c8eab249648850fafdd25912c1
+  - enabled: 1
+    path: Assets/Clase 10/Lesson 10.unity
+    guid: 06bb41012c699234198b7ed2824a3099
   m_configObjects: {}
