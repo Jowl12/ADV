@@ -24,7 +24,9 @@ public class el_Movimiento : MonoBehaviour
         //animator.SetFloat("Vertical", 0);
         //animator.SetFloat("Horizontal", 0);
         if (Input.GetKeyDown(KeyCode.Space)) {
+            downAccel = -1f;
             animator.SetTrigger("Roll");
+            downAccel = 1f;
         }
         if (Input.GetKey(KeyCode.I))
         {
